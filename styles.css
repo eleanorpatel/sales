@@ -7,7 +7,7 @@ body{
 
 header{
   background: #0B2554;
-  text-color: #FAF6EB;
+  color: #FAF6EB;
   display: flex;
   justify-content: space-between;
   align-items: center;
