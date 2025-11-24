@@ -1,1 +1,43 @@
+body{
+  margin: 0px;
+  font-family: Pacifico Cursive;
+  text-color: 333;
+  background-color: #FAF6EB
+}
 
+header{
+  background: #0B2554;
+  text-color: #FAF6EB;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo{
+  font-size: 1.5em;
+}
+
+.navlinks{
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navlinks a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+table{
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+th, td{
+  border: 1px solid;
+  padding: 10px;
+  text-align: left;
+}
