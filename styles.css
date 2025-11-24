@@ -1,13 +1,13 @@
 body{
   margin: 0px;
   font-family: Pacifico, cursive;
-  text-color: RGB (11, 37, 84);
-  background-color: RGB (250, 246, 235)
+  color: rgb(11, 37, 84);
+  background-color: rgb(250, 246, 235)
 }
 
 header{
-  background: RGB (11, 37, 84);
-  text-color: RGB (250, 246, 235);
+  background: rgb(11, 37, 84);
+  color: rgb(250, 246, 235);
   display: flex;
   justify-content: space-between;
   align-items: center;
