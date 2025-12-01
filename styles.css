@@ -2,12 +2,12 @@ body{
   margin: 0;
   font-family: Arial, Sans Serif;
   color: rgb(11, 37, 84);
-  background-color: rgb(250, 246, 235);
+  background-color: rgb(245, 232, 201);
 }
 
 header{
   background: rgb(11, 37, 84);
-  color: rgb(250, 246, 235);
+  color: rgb(245, 232, 201);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,7 +25,7 @@ header{
 }
 
 .navlinks a{
-  color: rgb(250, 246, 235);
+  color: rgb(245, 232, 201);
   text-decoration: none;
   font-weight: bold;
 }
