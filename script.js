@@ -12,7 +12,7 @@ let cart = []
                                                                     const existingItem = cart.find (i => i.name === name);
                                                                     if (existingItem) {existingItem.quantity += 1;
                                                                                        } else {
-                                                                                        cart.push ({name, price, quantity: 1}):
+                                                                                        cart.push ({name, price, quantity: 1})
                                                                     }
                                                                     updateCart();
                                                                    })})
@@ -20,12 +20,12 @@ function updateCart (){
   cartList.innerHTML = "";
   let total = 0;
   cart.forEach (item, index => { const li = document.createElement("li");
-                                li.classList.add (cart-item)
-                                li.innerHTML = ${item.name} x${item.quantity} - $${(item.price * item.quantity).toFixed(2)}
+                                li.classList.add (cart-item);
+                                li.innerHTML = `${item.name} x ${item.quantity} - $${(item.price * item.quantity).toFixed(2)}
                                 <button onclick="removeItem(${index})">Remove</button>
-                ;
+                `;
   cartList.appendChild(li);
   total += item.price * item.quantity;
 });
-cartTotal.textContent = Total: $${total.toFixed(2)}
+cartTotal.textContent = `Total: $${total.toFixed(2)}`;
 }
