@@ -1,10 +1,10 @@
-const add-buttons = document.querySelectorAll(`.add-btn`);
+const addButtons = document.querySelectorAll(`.add-btn`);
 
-const cart-list = document.getElementById(`cart-items`);
+const cartList = document.getElementById(`cart-items`);
 
-const cart-total = document.getElementById(`.cart-total`);
+const cartTotal = document.getElementById(`.cart-total`);
 
-const clear-cart = document.getElementById(`.clear-cart`);
+const clearCart = document.getElementById(`.clear-cart`);
 
 let cart = []
   addButtons.forEach(btn => { btn.addEventListener ("click", () => {const name = btn.dataset.name;
