@@ -8,9 +8,9 @@ const clearCart = document.getElementById(`.clear-cart`);
 
 let cart = []
   addButtons.forEach(btn => { btn.addEventListener ("click", () => {const name = btn.dataset.name;
-                                                                    const price = parseFloat (btn.dataset.price);
-                                                                    const existing-item = cart.find (i => i.name === name);
-                                                                    if (existing-item) {existing-item.quantity += 1;
+                                                                    const price = parseFloat(btn.dataset.price);
+                                                                    const existingItem = cart.find (i => i.name === name);
+                                                                    if (existingItem) {existingItem.quantity += 1;
                                                                                        } else {
                                                                                         cart.push ({name, price, quantity: 1}):
                                                                     }
