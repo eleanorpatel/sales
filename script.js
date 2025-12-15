@@ -3,6 +3,7 @@ const addButtons = document.querySelectorAll(`.add-btn`);
 const cartList = document.getElementById(`cart-items`);
 
 const cartTotal = document.getElementById(`.cart-total`);
+let cart = [];
 
 const clearCart = document.getElementById(`.clear-cart`);
     addButtons.forEach(btn => {
@@ -37,7 +38,7 @@ const clearCart = document.getElementById(`.clear-cart`);
         total += item.price * item.quantity;
       });
 
-/*let cart = []
+/*
   addButtons.forEach(btn => { btn.addEventListener ("click", () => {const name = btn.dataset.name;
                                                                     const price = parseFloat(btn.dataset.price);
                                                                     const existingItem = cart.find (i => i.name === name);
