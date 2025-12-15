@@ -1,4 +1,4 @@
-const addButtons = document.querySelectorAll(`add-btn`);
+const addButtons = document.querySelectorAll(`.add-btn`);
 
 const cartList = document.getElementById(`cart-items`);
 
