@@ -37,6 +37,8 @@ const clearCart = document.getElementById(`clear-cart`);
         cartList.appendChild(li);
         total += item.price * item.quantity;
       });
+      cartTotal.textContent = `Total: $${total.toFixed(2)}`;
+    }
 
 /*
   addButtons.forEach(btn => { btn.addEventListener ("click", () => {const name = btn.dataset.name;
