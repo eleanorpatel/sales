@@ -1,6 +1,7 @@
 <!---Classwork for Dec 22. 1) Add a checkout button and the code for the checkout inside the javascript
 2) add the code for the clear cart button in the javascript (should be your easiest task)
-3) add the images to the html table, essentially rebuild the table (this should be the biggest part of the day)-->
+3) add the images to the html table, essentially rebuild the table (this should be the biggest part of the day)
+4) add starry Night as well the scream-->
 
 <!doctype html>
 <html lang="en">
@@ -38,16 +39,36 @@
       </ul>
       </nav>
   </header>
-  <section class= "buy-section">
-    <h1> Our Collection </h1>
-    <tr><th> Artist </th><th> Title</th><th> Price</th><th></th></tr>
-    <tr>
-      <td> Vincent Van Gough </td>
-      <td> Cafe Terrace at Night </td>
-      <td> $100,000,000 </td>
-      <td><button class= "add-btn" data-name="Cafe Terrace at Night" data-price="100000000">Add to Cart</button></td>
+  <!--I will help you get started on rebuilfing the table but you should add the other images as well as sorting them by artist.-->
+  <section class="buy-section">
+  <h1>Our Collection</h1>
+
+  <table class="art-table">
+    <thead>
+      <tr>
+        <th>Artist</th>
+        <th>Artwork</th> <!--This will help us organixe things better by attaching the image to the price-->
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Vincent Van Gough</td>
+        <td>
+          <!--The art card allows us to display the image very seamlessly-->
+          <div class="art-card">
+            <img class="art-img" src="art-2.jpeg" alt="Cafe Terrace at Night">
+            <!--This got switche to a div for clarity but it's the same no js changes needed-->
+            <div class="art-title">Cafe Terrace at Night</div>
+            <div class="art-price">$100,000,000</div>
+            <button class="add-btn" data-name="Cafe Terrace at Night" data-price="100000000">
+              Add to Cart
+            </button>
+          </div>
+        </td>
     </tr>
     <tr>
+      <!--Change this to follow that-->
       <td> Leonardo Da Vinci </td>
       <td> Mona Lisa </td>
       <td> $1,000,000,000 </td>
@@ -58,6 +79,7 @@
       <ul id="cart-items"></ul>
       <p id="cart-total"> Total: $0.00 </p>
       <button id="clear-cart"> Clear Cart </button>
+      <!--Checkout button here-->
     </section>
     <script src = "script.js"> </script>
   </body>
