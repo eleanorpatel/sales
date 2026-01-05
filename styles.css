@@ -54,3 +54,33 @@ th, td{
   display: flex;
   flex-direction: column;
 }
+/* Art Gallery Pictures, this gives us the look we want for the order page */
+
+.art-table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+.art-card {
+  display: flex;
+  flex-direction: column; /* image above title/price */
+  gap: 8px;
+}
+
+.art-img {
+  width: 220px;      /* adjust as you like */
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.art-title {
+  font-weight: bold;
+}
+
+.art-price {
+  font-weight: bold;
+}
+
