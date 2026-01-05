@@ -68,3 +68,10 @@ function removeItem(index){
   cart.splice(index, 1);
   updateCart()
 }
+
+function clearCart.addEventListener(click), () => {
+    cart = [];
+    updateCart();
+}
+
+
