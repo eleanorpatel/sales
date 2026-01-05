@@ -67,11 +67,11 @@ cartTotal.textContent = `Total: $${total.toFixed(2)}`;
 function removeItem(index){
   cart.splice(index, 1);
   updateCart()
-}
+};
 
-function clearCart.addEventListener(click), () => {
+function clearCart.addEventListener("click", () => {
     cart = [];
     updateCart();
-}
+});
 
 
