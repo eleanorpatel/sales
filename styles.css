@@ -46,6 +46,8 @@ th, td{
   border: 1px solid;
   padding: 10px;
   text-align: left;
+  display: flex;
+  flex-direction: row;
 }
 
 .buy-section{
