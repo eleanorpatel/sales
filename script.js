@@ -76,10 +76,10 @@ clearCart.addEventListener("click", () => {
 
 const checkOut = document.getElementById(`checkout`);
 checkOut.addEventListener("click", () => {
-    if (cart.length === 0);
+if (cart.length === 0){
     alert("Cart is empty");
     return; 
-
+}
 let orderSummary = "order: \n";
 
 cart.forEach(item => {
