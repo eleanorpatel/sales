@@ -80,8 +80,10 @@ checkOut.addEventListener("click", () => {
     alert("Cart is empty");
     return; 
 
+let orderSummary = "order: \n";
 
-
+cart.forEach(item => {
+    orderSummary += 
 
 
 
