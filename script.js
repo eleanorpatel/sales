@@ -84,7 +84,11 @@ let orderSummary = "order: \n";
 
 cart.forEach(item => {
     orderSummary += `${item.name} x${item.quantity} - $${(item.price * item.quantity).toFixed(2)}\n`});
-
+orderSummary += `Total: $${cart.reduce((sum, item) => sum + item.price * item.quantity, 0).toFixed(2)}`;
+alert(orderSummary);
+cart = [];
+updateCart();
+});
 
 
 
