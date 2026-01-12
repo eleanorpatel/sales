@@ -23,7 +23,7 @@ const clearCart = document.getElementById(`clear-cart`);
       });
     });
 
-    updateCart() {
+    function updateCart() {
       cartList.innerHTML = '';
       let total = 0;
 
@@ -69,7 +69,7 @@ function removeItem(index){
   updateCart()
 };
 
-function clearCart.addEventListener("click", () => {
+clearCart.addEventListener("click", () => {
     cart = [];
     updateCart();
 });
