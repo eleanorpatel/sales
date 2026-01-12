@@ -74,7 +74,7 @@ clearCart.addEventListener("click", () => {
     updateCart();
 });
 
-const checkOut = document.getElementById(`check-out`);
+const checkOut = document.getElementById(`checkout`);
 checkOut.addEventListener("click", () => {
     if (cart.length === 0);
     alert("Cart is empty");
