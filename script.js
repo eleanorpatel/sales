@@ -83,7 +83,8 @@ checkOut.addEventListener("click", () => {
 let orderSummary = "order: \n";
 
 cart.forEach(item => {
-    orderSummary += 
+    orderSummary += `${item.name} x${item.quantity} - $${(item.price * item.quantity).toFixed(2)}\n`});
+
 
 
 
