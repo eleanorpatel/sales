@@ -23,7 +23,7 @@ const clearCart = document.getElementById(`clear-cart`);
       });
     });
 
-    function updateCart() {
+    updateCart() {
       cartList.innerHTML = '';
       let total = 0;
 
